@@ -5,16 +5,12 @@ const input2 = document.querySelector('#calculo2');
 const btn = document.querySelector('#btnCalcular');
 const pResult = document.getElementById('resultado');
 
-// Diferentes tipos de EventListeners
 form.addEventListener('submit', sumarInputValues);
-h1.addEventListener('copy', alertaDeCopia);
 
 function sumarInputValues(event){
     event.preventDefault();
-    const sumaInputs = input1.value + input2.value;
-    pResult.innerText = 'Resultado: ' + sumaInputs;
-}
-
-function alertaDeCopia(){
-    alert('Copiaste el texto crack!!');
+    const number1 = parseInt(input1.value);
+    const number2 = parseInt(input2.value);
+    const numbersSum = number1 + number2;
+    pResult.innerText = 'Resultado: ' + numbersSum;
 }
