@@ -6,13 +6,15 @@
     <title>Manipulación del DOM básica</title>
 </head>
 <body>
-    <h1 someAttribute="valorAtributo" class="titulito rojo">Manipulación básica del DOM</h1>
+    <h1>Calculadora (Si, ya sé que es un cliché)</h1>
 
-    <p>Esto es un párrafo</p>
-    <p class="parrafito">Este es un párrafo con clase</p>
-    <p id="pid">Este es un párrafo con ID</p>
+    <p>Escribe los números para realizar la operación:</p>
 
-    <input type="text" placeholder="Escribe algo aquí">
+    <input id="calculo1" placeholder="Escribe algo aquí">
+    <input id="calculo2" placeholder="Escribe algo aquí">
+    <button id="btnCalcular" onclick="calcularOnClick()">Calcular</button>
+
+    <p id="resultado"></p>
 
     <script src="./main.js"></script>
 </body>
